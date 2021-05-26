@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Playground HTML</title>
+    <style>
+        #wrapper {
+            width: 970px;
+            margin: auto;
+        }
+
+        h1 {
+            display: inline-block;
+            width: 350px;
+            margin: 10px 0px 0px 240px;
+            text-align: center;
+        }
+
+        #section1 {
+            margin: 15px 10px 0px 10px;
+            padding: 0px;
+        }
+
+        #box {
+            margin: 10px;
+            padding: 0px;
+            width: 250px;
+            height: 250px;
+            display: inline-block;
+            background-color: aqua;
+        }
+    </style>
+</head>
+<body>
+    <div id="wrapper">
+        <h1>Welcome!</h1>
+        <section id="section1">
+            {% for x in range(0, boxNum, 1): %}
+                <p id="box"></p>
+            {% endfor %}
+        </section>
+    </div>
+</body>
+</html>
